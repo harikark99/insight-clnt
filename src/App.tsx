@@ -1,12 +1,17 @@
-import React from 'react';
-import ProjectList from './components/ProjectList';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Projects from './pages/Projects';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <ProjectList />
-      {}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </Router>
   );
 };
 

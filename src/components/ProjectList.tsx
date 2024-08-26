@@ -12,7 +12,7 @@ const ProjectList: React.FC = () => {
 
   return (
     <div>
-      <h1>Projects</h1>
+      <h1>Project222s</h1>
       <ul>
         {projects.map((project) => (
           <li key={project.id}>{`Project ID: ${project.id}, Project Name: ${project.project_name}`}</li>
